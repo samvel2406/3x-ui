@@ -85,7 +85,7 @@ func (a *SUBController) subs(c *gin.Context) {
 		// Add headers
 		c.Writer.Header().Set("Subscription-Userinfo", header)
 		c.Writer.Header().Set("Profile-Update-Interval", a.updateInterval)
-		c.Writer.Header().Set("Profile-Title", "🇩🇪 Quattro VPN")
+		c.Writer.Header().Set("Profile-Title", "🔥 Quattro VPN")
 
 		if a.subEncrypt {
 			c.String(200, base64.StdEncoding.EncodeToString([]byte(result)))
@@ -119,7 +119,7 @@ func (a *SUBController) subJsons(c *gin.Context) {
 		// Add headers
 		c.Writer.Header().Set("Subscription-Userinfo", header)
 		c.Writer.Header().Set("Profile-Update-Interval", a.updateInterval)
-		c.Writer.Header().Set("Profile-Title", "🇩🇪 Quattro VPN")
+		c.Writer.Header().Set("Profile-Title", "🔥 Quattro VPN")
 
 		c.String(200, jsonSub)
 	}
